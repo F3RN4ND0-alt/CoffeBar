@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="img/ms-icon-144x144.png">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+        </div>
+        <div class="form" >
+            <form action="index.html" target="_self">
+                <div class="form-header">
+                    <img src="img/coffe break.png" class="login_logo">
+                        <h1>Cadastre-se</h1>
+                </div>  
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Ex:Fernando" required>
+                    
+                    </div>
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lasttname" placeholder="Ex:Silva" required>
+                    
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Ex:user.name@gmail.com" required>
+
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Ex:12345678" maxlength="8" required>
+                    
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Confirme sua senha</label>
+                        <input id="password" type="password" name="Confirmepassword" placeholder="Ex:12345678" maxlength="8" required>
+                    </div>
+                </div>
+                
+                <div class="gender-inputs">
+                    <div class="gender-tittle">
+                        <h4>Gênero</h4>
+                    </div>
+                    
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" id="famale" name="gender" required>
+                            <label for="femaele">Feminino</label>
+                        </div>
+                    </div>
+                    
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" id="male" name="gender" required>
+                            <label for="male">Masculino</label>
+                        </div>
+                    </div>
+                    
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" id="others" name="gender" required>
+                            <label for="others">Outros</label>
+                        </div>
+                    </div>
+                    
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" id="none" name="gender" required>
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="continue-button">
+                    <a href="index.html"><input type="submit" id="logar-button" value="Logar"></a>
+                </div>
+            </form>
+            <!--O Continue-button não estava funcionando como queria,ou ele so iria direto para o Login sem ver os Required,ou ele 
+            via os required mas nao iria para a  pagina,assim pesquisando descobri estava dando conflito o button com o required por
+            estar em um form,mudei o button para input,e... NADA,continuou mesmo problema até tentei tirar div do form mas só piorou,
+            assim pesquisei e coloquei o meu formulario para receber as informações para o index.html com o action e um target_self.
+            -->
+        </div>
+    </div>
+</body>
+</html>

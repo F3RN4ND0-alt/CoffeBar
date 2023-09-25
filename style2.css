@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform:capitalize ;
+    transition: .2s linear;
+}
+body{
+    --main-color:#b8860b;
+    --black:#13131a;
+    --bg:#010103;
+    --gray:#4F4F4F;
+    --gold:#ffd700;
+    --cafecomleite:#ac9794;
+    --cafeexpresso:#7a624d;
+}
+
+html{
+    font-size: 62.5%;
+    overflow:auto;
+    scroll-behavior:smooth;
+}
+html::-webkit-scrollbar{
+    width: 0rem;
+}
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+.headling{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    font-size: 5rem;
+}
+.headliing{
+    text-align:center;
+    font-size: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+.headliing span{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-color);  
+}
+.headling span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+.btn{
+    display: inline-block;
+    padding:.9rem 3rem ;
+    font-size: 3rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: .2rem;
+}
+section{
+    padding: 2rem 7%;
+}
+body{
+    background: var(--black);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 999px;
+    background: transparent;
+    box-shadow: 1px 0.2px;
+    backdrop-filter: blur(5px);
+}
+
+.header .logo img{
+    height:12rem;
+    filter:invert(100%);
+    mix-blend-mode:color-dodge;
+}
+.header .navbar a{
+    margin:3rem ;
+    font-size: 3rem;
+    color:#fff;
+}
+header .navbar a:hover{
+    color:var(--gold);
+    border-bottom: .1rem solid var(--gold);
+    padding-bottom: .2rem;
+}
+.header .icons div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+header .icons div:hover{
+    color:var(--gold);
+}
+#menu-btn{
+    display: none;
+}
+.home{  
+    max-width: 100%;
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    background:url(img/fundo6.jpg)no-repeat;
+    background-size: cover;
+    background-position:left;
+}
+.home .content{
+    max-width:100rem ;
+    max-height: 10rem;
+    margin-top: 75rem;
+}
+.home .content h3{
+    font-size:6rem;
+    text-transform: uppercase;
+    color:var(--main-color);
+    text-shadow: 1px 1px 1px #000;
+}
+.home .content p{
+    font-size: 3rem;
+    font-weight: lighter;
+    line-height: 1.0;
+    padding:1rem 0;
+    color: #ffffff;
+
+}
+.about .row{
+display: flex;
+align-items: center;
+background: var(--black);
+flex-wrap: wrap;
+}
+.about .row .image{
+    flex:1 1 45rem;
+}
+.about .row .image img{
+    width:100%;
+}
+.about .row .content{
+    flex:1 1 45rem;
+    padding: 2rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color:var(--gold) ;
+}
+.about .row .content p{
+    font-size: 2rem;
+    color:#ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.planos{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: var(--main-color);
+    border-radius: 30px;
+    width: 300px;
+    min-width: 60vh;
+    min-height: 30vh;
+    font-size: 1rem;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.5s; 
+    position:relative;
+}
+.card:hover{
+    background-color: var(--cafeexpresso);
+    min-height: 30vh;
+}
+.cardimg{
+    background-image:url(img/fundo7.jpg);
+    color: #ffd700;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    position:center;
+    border-top-right-radius: 30px;
+    height:300px;
+    background-position: center;
+    background-size: cover;
+    opacity: .5;
+    transition: all .5s;
+}
+.cardimg:hover{
+    opacity:100;
+}
+.cardimg span{
+    font-style: italic;
+    text-transform: uppercase;
+}
+.card .content{
+    padding: 0 20px;
+    overflow: hidden;
+    height:0;
+    transform: translateY(30px);
+}
+.card:hover .content{
+    padding:20px;
+    height:200px;
+    max-height: 200px;
+    transition: all .5s;
+    transform: translateY(0);
+}
+.card .content li{
+    margin-bottom: 0;
+    font-size: 25px;
+    list-style-type: none;
+}
+.card .content .title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.card .content .desc{
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .2;
+}
+.card .arrow{
+    padding:15px;
+    font-size: 20px;
+    transform: rotate(0);
+}
+.card:hover .arrow{
+    transform: rotate(-180deg);
+}
+.tabelaa{
+    width: 100%;
+    height:110vh;
+    display:flex; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top:-300px;
+}
+.table{
+    width:90%; 
+    height:50vh;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    position: relative;
+}
+.table thead{
+    background-color:#ffffff;
+    font-weight: bold;
+    color:var(--main-color);
+    font-size: 2.5rem;
+}
+.table tbody tr{
+    background:#ffffff;
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+.table th,td{
+    padding:7px 0;
+}
+.buttons{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    margin:0;
+    font-size: 2.5rem;
+    display: flex;
+ 
+    font-weight: 3rem;
+}
+@media screen and (max-width:991px){
+    html{
+        font-size:53%;
+    }
+    .header{
+        padding: 0rem 1rem;
+    }
+    section{
+        padding: 2rem 7%;
+    }
+}
+@media screen and (max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top:40%; right:10%;
+        background:#fff;
+        background: 30rem;
+        margin: 0;
+        backdrop-filter: blur(2px);
+    }
+    .header .logo img{
+        position:relative;
+        right: 10%;
+    }
+    .home{
+        justify-content:center;
+        text-align: center;
+        min-height: 100vh;
+        background-position: center;
+    }
+    .home.content h3{
+        font-size:4.5rem;
+        text-align:top;
+    }
+    .home.content p{
+        font-size:2.5rem ;
+    }
+    .card{
+        width:100px;
+    }
+    .card:hover{
+        min-height: 300px;
+    }
+    .cardimg{
+        height: 300;
+        
+    }
+    .table {
+        display: block;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table tbody {
+        display: block;
+    }
+
+    .table tr {
+        margin-bottom: 20px;
+        display: grid;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table td {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:480px){
+    html{
+        font-size: 50%;
+    }
+}

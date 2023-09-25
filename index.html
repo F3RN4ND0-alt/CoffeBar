@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeBar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/ms-icon-144x144.png">
+</head>
+
+<body>
+    <main>
+        <section class="Login">
+            <div class="wrapper">
+                <!--Logo-->
+                <img src="img/coffe break.png" class="login_logo">
+                <!--Login-->
+                <h1 class="login_tittle">Login</h1>
+                <form>
+                    <label class="login__label">
+                        <!--Colocar informação Nome do Cliente-->
+                        <input type="text" name="name" class="input" placeholder="Nome do Cliente"  aria-required="true" required>
+                        <button type="reset" class="login_button"><img src="img/lixeira-de-reciclagem.png"
+                                style="max-width:25px; max-height: 25px;"></button>
+                        <div class="line-under"></div>
+                </form>
+                </label>
+                <form>
+                    <label class="login__label">
+                        <!--Colocar a Senha do Cliente-->
+                        <input type="password" name="password" class="input" placeholder="Senha" maxlength="8"  aria-required="true" required>
+                        <button type="reset" class="login_button"><img src="img/lixeira-de-reciclagem.png"
+                                style="max-width:25px; max-height: 25px;"></button>
+                        <div class="line-under"></div>
+                </form>
+                </label>
+                <!--Checkbox-->
+                <label class="login__label_checkbox">
+                    <input type="checkbox" class="input_checkbox">
+                    Lembre de mim
+                </label>
+                <!--Button de Login-->
+                <a href="clientecoffe.html"><button type="button" class="login_enter">Login</button></a>
+                <div class="line-upper"></div>
+                <span class="notcont">Não tem uma conta?</span>
+                <!--Registrese-->
+                <a href="cadastrocliente.html" class="login_link ">Registre-se</a>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
