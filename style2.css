@@ -43,19 +43,6 @@ html::-webkit-scrollbar-thumb{
     padding-bottom: 1.5rem;
     font-size: 5rem;
 }
-.headliing{
-    text-align:center;
-    font-size: 5rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    position: relative;
-}
-.headliing span{
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--main-color);  
-}
 .headling span{
     color:var(--main-color);
     text-transform: uppercase;
@@ -213,10 +200,58 @@ flex-wrap: wrap;
     opacity: .5;
     transition: all .5s;
 }
+.cardimg1{
+    background-image:url(img/fundo3.jpg);
+    color: #ffd700;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    position:center;
+    border-top-right-radius: 30px;
+    height:300px;
+    background-position: center;
+    background-size: cover;
+    opacity: .5;
+    transition: all .5s;
+}
+.cardimg2{
+    background-image:url(img/fundo4.jpeg);
+    color: #ffd700;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    position:center;
+    border-top-right-radius: 30px;
+    height:300px;
+    background-position: center;
+    background-size: cover;
+    opacity: .5;
+    transition: all .5s;
+}
 .cardimg:hover{
     opacity:100;
 }
 .cardimg span{
+    font-style: italic;
+    text-transform: uppercase;
+}
+.cardimg1:hover{
+    opacity:100;
+}
+.cardimg1 span{
+    font-style: italic;
+    text-transform: uppercase;
+}
+.cardimg2:hover{
+    opacity:100;
+}
+.cardimg2 span{
     font-style: italic;
     text-transform: uppercase;
 }
@@ -254,50 +289,6 @@ flex-wrap: wrap;
 }
 .card:hover .arrow{
     transform: rotate(-180deg);
-}
-.tabelaa{
-    width: 100%;
-    height:110vh;
-    display:flex; 
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-top:-300px;
-}
-.table{
-    width:90%; 
-    height:50vh;
-    text-align: center;
-    align-items: center;
-    position: relative;
-    justify-content: center;
-    position: relative;
-}
-.table thead{
-    background-color:#ffffff;
-    font-weight: bold;
-    color:var(--main-color);
-    font-size: 2.5rem;
-}
-.table tbody tr{
-    background:#ffffff;
-    color: var(--main-color);
-    font-size: 2.5rem;
-}
-.table th,td{
-    padding:7px 0;
-}
-.buttons{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    position:absolute;
-    margin:0;
-    font-size: 2.5rem;
-    display: flex;
- 
-    font-weight: 3rem;
 }
 @media screen and (max-width:991px){
     html{
@@ -349,27 +340,12 @@ flex-wrap: wrap;
         height: 300;
         
     }
-    .table {
-        display: block;
-    }
-
-    .table thead {
-        display: none;
-    }
-
-    .table tbody {
-        display: block;
-    }
-
-    .table tr {
-        margin-bottom: 20px;
-        display: grid;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .table td {
-        margin-bottom: 10px;
+    .cardimg1{
+        height: 300;
+        
+    }.cardimg2{
+        height: 300;
+        
     }
 }
 @media (max-width:480px){
